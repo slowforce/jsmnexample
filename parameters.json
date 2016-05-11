@@ -1,0 +1,51 @@
+{
+    "devid": "1000100050810000",
+    "log interval": 30,
+    "comm": {
+        "type": "serial",
+        "options": {
+    	   "serialPort": "/dev/ttyO2",
+	       "baudrate": 9600,
+	       "databits": 8,
+	       "stopbits": 1,
+	       "parity": "even",
+	       "timeout": 5
+        }
+    },
+    "upload interval": 120,
+    "cloudServer": "127.0.0.1",
+    "cloudPort": 2016,
+    "sensors": [{
+	"address": 10,
+        "regs": [{
+	    "addr": 1006,
+            "datatype": "real",
+            "typeid": "0100",
+            "sensorid": "01",
+	    "sampleid": "01"
+        },{
+	    "addr": 1008,
+            "datatype": "real",
+            "typeid": "0200",
+            "sensorid": "02",
+	    "sampleid": "01"
+        }]
+     },{
+	"address": 20,
+        "regs": [{
+	    "addr": 1010,
+            "datatype": "real",
+            "typeid": "0300",
+            "sensorid": "03",
+	    "sampleid": "01"
+        },{
+	    "addr": 1012,
+            "datatpype": "real",
+            "typeid": "0400",
+            "sensorid": "04",
+	    "sampleid": "01"
+        }]
+    }]
+}
+
+
